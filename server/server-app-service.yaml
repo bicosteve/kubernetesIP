@@ -1,11 +1,11 @@
 apiVersion: 1
 kind: Service
 metadata:
-  name: backend
+  name: server-cluster-ip-service
 spec:
   selector:
-    app: backend
+    app: server
   ports:
     - port: 5000
       targetPort: 5000
-type: LoadBalancer
+  type: ClusterIP
