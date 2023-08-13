@@ -36,4 +36,6 @@ The exposed port is 3000.
 
 The client service is a kind of 'Service' and has a type of 'LoadBalancer'
 The targetPort is set to 5000.
-This is the port which will be used by the nginx to direct traffic to the client.
+This is the port which will be used by the nginx to direct traffic to the client. IP:http://34.31.72.126:3000/
+
+kubectl create secret generic dbpassword --from-literal DBPASSWORD=123

@@ -18,3 +18,17 @@ spec:
           image: bixoloo/backend:v1.0.2
           ports:
             - containerPort: 5000
+          env:
+            - name: DB_USER
+              value: root
+            - name: DB_NAME
+              value: yolomy
+            - name: DB_HOST
+              value: mongodb
+            - name: DB_PORT
+              value: '27017'
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: dbpassword
+                  key: DBPASSWORD
