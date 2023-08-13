@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: server-deployment
+  namespace: yolo
 spec:
   replicas: 1
   selector:
@@ -17,7 +18,3 @@ spec:
           image: bixoloo/backend:v1.0.2
           ports:
             - containerPort: 5000
-          resources:
-            limits:
-              memory: '128Mi'
-              cpu: '500m'
