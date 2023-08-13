@@ -4,7 +4,6 @@ metadata:
   name: client-service
   namespace: yolo
 spec:
-  ##type: ClusterIP
   type: LoadBalancer
   selector:
     component: web
