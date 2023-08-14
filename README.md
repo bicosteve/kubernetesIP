@@ -86,4 +86,4 @@
 
 ### 5. The application
 
-My kubernetes ochestrated application is running on this ip http://34.31.72.126:3000/
+    My kubernetes ochestrated application is running on this ip http://34.31.72.126:3000/
